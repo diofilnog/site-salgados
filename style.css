@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    font: 1em "Lucida Grande" , "Lucida Sans Unicode" , Arial , sans-serif;
+    background: rgb(227, 228, 176) url(./img/salgados-capa.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;   
+    
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+#container{
+    width:100%;
+    margin: 0 auto;
+}
+
+#bgCarrocel{
+    border-radius: 10px;
+    background-color: #0f0f0f9c;
+    box-shadow: 1px 1px 4px #fc0000 
+}
+
+
+
+#logo a{
+    width: 110px;
+    height: 110px;
+    background: url(./img/logo3.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-indent: -9999px; /* para naop aparecer na tela , mas aparece para leitores de tela(acessibilidade)*/
+    display: block; /* para alinhar a logo*/
+
+}
+
+a:link , a:active , a:visited{
+    color: #ffffff;
+    text-decoration: none; /* para tirar a borda inferior do link*/
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+#menu{
+    position: relative;
+    display: inline-block;
+}
+
+
+#menu a:hover , #footer a:hover{
+    color:#ebacac;
+    border-bottom: 1px solid #f70606;
+}
+
+nav ul{/* formatacao geral*/
+    list-style:none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+nav ul li a:link{ /* formatando cada link*/
+    
+    margin-right: 25px;
+    padding-bottom: 3px;
+    
+}
+
+nav ul li{
+    display: inline;
+}
+
+.apresentacao{
+    color: white;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    margin-top: 5px;
+    font-weight: 900;
+}
+
+.apresentacao h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(236, 240, 9);
+}
+
+.apresentacao a{
+    letter-spacing: 2px;
+}
+
+.apresentacao i{
+    margin-right: 10px;
+
+}
+
+#salgadoDestaque{
+    margin: 5px 5px 0 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #000000ad;
+    font-family: 'Lobster', cursive;
+    box-shadow: 2px 1px 4px #fc0000 ;
+
+}
+
+.combo{
+    margin-top: 20px;
+}
+
+.combo img{
+    height: 180px;
+    width: 230px;
+    
+}
+
+.combo h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.combo p{
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background: red;
+    color: yellow;
+    border-radius: 5px;
+}
+
+.salgadoCombo{
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    color: #ffff00;
+    background-color: #ffff00; 
+    margin-top: 10px;
+    box-shadow: 5px 1px 4px #e4d50ed3 ;
+}
+
+
+#salgadoFrito , #salgadoAssado , #combos{
+    margin-top: 40px;
+    text-align: center;
+    background: #ec1515;
+    color: white;
+    padding: 10px;
+    box-shadow: 5px 4px 4px #ecd60d ;
+    border-radius: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.menuSalgados .doisNomes{
+    font-size:14px;
+}
+
+.salgados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.menuSalgados{
+    width: 100px;
+    height: 170px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: rgb(70, 4, 4);
+    background:  #ffff00;
+    border-radius: 10px;
+    box-shadow: 5px 4px 4px #e61414 ;
+    
+}
+
+.menuSalgados h1{
+    font-size: 16px;
+    
+}
+
+.menuSalgados img{
+    height: 80px;
+    width: 80px;
+    padding: none;
+    
+}
+
+.menuSalgados p{
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+}
+
+#salgadosCombos .menuSalgados p{
+    margin: 0;
+}
+
+#salgadosCombos .menuSalgados img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#salgadosCombos .menuSalgados p{
+    font-size: 13px;
+    
+}
+
+#combos a i {
+    padding-top: 10px;
+    font-size: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+
+#combos a {
+   
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+#combos a:hover{
+    border-bottom: 2px solid rgb(233, 222, 222);
+}
+
+.diogo i{
+    margin-left: 30px;
+    font-size: 30px;
+    color:hsl(317, 37%, 43%) ;
+    
+}
+
+.diogo {
+   padding-left: 20px;   
+   display: inline;
+   margin-bottom: 10px;
+   
+    
+}
+
+.diogo a:hover , .diogo i:hover{
+    color: green;
+}
+
+
+
+
+/* rodape*/
+
+footer{
+    margin-top: 50px;
+    padding:20px 0 30px 0;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+footer  p{
+    color: rgb(168, 111, 25);
+    padding: 5px 0 5px 0 ;
+    font-size: 12px;
+}
+
+.meuContato {
+    border-top: 2px solid white;
+    margin-top: 10px;
+}
+
+.meuContato p , .diogo p{
+    color: #f8f2f2;
+    font-size: 16px;
+}
+
+.meuContato  i , .diogo i{
+    margin-right: 20px;
+}
+
+.meuContato a , .diogo a{
+    transform: 0.2s;
+    margin:10px 5px;
+    
+}
+
+.meuContato a:hover{
+    background: rgb(107, 5, 5);
+    border-radius: 10px;
+    padding:5px;
+}
+
+footer h3{
+    color: rgb(248, 217, 39);
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+footer ul li{
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 16px;
+}
+
+
+/* media querie */
+@media(max-width:400px){
+
+    body{
+        font-family: 'Arial', 'Helvetica', 'sans-serif';
+    }
+    header ul{
+        font-size: 10px;
+    }
+    .apresentacao i , .apresentacao a{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .apresentacao h3{
+        margin-top: 30px;
+        color: rgb(236, 22, 22);;
+    }
+
+    
+
+}
+
+
+
+
+@media(min-width:768px){
+
+    
+    header{
+        margin-top: 25px;
+    }
+
+
+    #logo a{
+        width: 160px;
+        height: 160px;
+    }
+
+    #salgadoDestaque{
+        margin: 40px 5px 0 5px;
+    }
+    .combo p{
+        font-size: 24px;
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+
+    .salgados{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .menuSalgados{
+        width: 130px;
+        height: 180px;
+    }
+
+    .menuSalgados h1{
+        font-size: 18px;
+        
+    }
+
+
+    footer p{
+        font-size: 14px;
+    }
+}
+
+
+
+@media(min-width:820px){
+    #salgadoDestaque{
+        margin: 60px 5px 0 5px;
+    }
+
+    #container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header{
+        margin-top: 50px;
+    }
+
+    .menuSalgados .doisNomes{
+        font-size:18px;
+        font-weight: bold;
+    }
+
+    
+}
+
+
+@media(min-width:992px){
+
+
+    #logo a{
+        width: 180px;
+        height: 180px;
+    }
+
+    nav ul{
+        font-size: 18px;
+    }
+
+    .apresentacao{
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .apresentacao i{
+        margin-top: 20px;
+    }
+
+    
+
+    .combo p{
+        font-size: 28px;
+    }
+
+    .combo h1{
+        font-size: 30px;
+
+    }
+
+    .menuSalgados{
+        width: 140px;
+        height: 190px;
+        box-shadow: 7px 6px 6px #e61414 ;
+    }
+
+    .menuSalgados h1{
+        font-size: 22px;   
+    }
+
+    .menuSalgados p{
+        font-size: 20px;
+    }
+    .menuSalgados img{
+        height: 90px;
+        width: 90px;
+    }
+
+
+    .menuSalgados .doisNomes{
+        font-size:22px;
+        font-weight: bold;
+    }
+
+    
+
+    footer  p{
+        font-size: 16px;
+    }
+
+    footer h3{
+        font-size: 20px;
+    }
+
+
+}
+
+@media(min-width:1100px){
+    #salgadoDestaque{
+        margin: 80px 5px 0 5px;
+    }
+    .salgados{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1200px){
+   
+    #logo a{
+        width: 190px;
+        height: 190px;
+    }
+
+    .apresentacao{
+        margin-top: 50px;
+        font-size: 1.7em;
+    }
+
+    .combo p{
+        font-size: 32px;
+    }
+
+    .combo h1{
+        font-size: 32px;
+
+    }
+
+    .combo img{
+        height: 250px;
+        width: 300px;
+        
+    }
+
+    hr {
+        margin-top: 25px;
+    }
+
+    .menuSalgados{
+        width: 160px;
+        height: 230px;
+    }
+
+    .menuSalgados h1{
+        font-size: 26px;   
+    }
+
+    .menuSalgados p{
+        font-size: 24px;
+    }
+
+    .menuSalgados img{
+        height: 110px;
+        width: 110px;
+    }
+
+    #salgadosCombos .menuSalgados p{
+        font-size: 22px;
+    }
+
+    #salgadosCombos #combos h1{
+        font: 30px;
+    }
+
+    footer h3{
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
